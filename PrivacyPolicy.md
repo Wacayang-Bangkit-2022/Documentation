@@ -2,7 +2,7 @@
 Wacayang is a mobile app that provide functionality to predict Indonesian 
 wayang using images from camera or gallery. It shows information about wayang 
 and user can add/remove it as favorite and post comments about it.
-<br/>
+<br/><br/>
 If you choose to use this app, then you agree to this Privacy Policy. We will
 collect some information for the app to function. We will not use or share your 
 information with anyone.
