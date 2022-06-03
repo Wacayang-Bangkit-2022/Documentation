@@ -19,7 +19,7 @@ Wacayang is a mobile application that able to identify Indonesian wayang kulit c
 ## Integration Method
 Wacayang consists of three components, Android, Cloud Computing, and Machine Learning. Basically, to integrate these, Cloud Computing acts as service to bridge communication between Android and Machine Learning. Here is a simple illustration on how our integration method works.
 ![Integration Method](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/_integration_method.png)
-**Enter**
+<br />
 Integration method explanation:
 1. Android app send a network request using Retrofit library. This request has JWT token as Authorization header.
 2. Cloud Run acts as service to serve request from the app. It will verify the token first before proceed.
