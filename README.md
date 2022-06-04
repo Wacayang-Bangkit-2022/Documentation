@@ -27,7 +27,7 @@ Integration method explanation:
 5. Android app will process the JSON literals and show relevant information to the user.
 
 ## Android Studio Project Installation
-### a. Components
+### Components
 Wacayang Android app is developed using Android Studio IDE. Here are components that we used.
 * Developed using [Kotlin](https://kotlinlang.org/) language.
 * Composed by [Activity](https://developer.android.com/reference/android/app/Activity) and [Fragment](https://developer.android.com/guide/fragments).
@@ -38,7 +38,7 @@ Wacayang Android app is developed using Android Studio IDE. Here are components 
 * [BottomNavigation](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView) to navigate between main menus (Home, Favorite, and Settings).
 * Connected to [Firebase Auth](https://firebase.google.com/docs/auth) for Google and anonymous sign in.
 * Utilize [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), and [Repository](https://developer.android.com/codelabs/basic-android-kotlin-training-repository-pattern) pattern for Single Source of Truth (SSOT)
-### b. Workflow
+### Workflow
 1. Clone The Project and Open It in Android Studio
 ```
 git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
