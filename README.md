@@ -56,3 +56,8 @@ keytool -list -v -keystore <your keystore path> -alias <your alias>
 * Download the **google-service.json** from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
 #### 3. Run or Build The App
 After you open the project, wait for the Gradle to finish building first. Then you can choose to build debug app by using `Run -> Run'app'`. Or you can build signed App by head to `Build -> Generate Signed Bundle/APK`.
+## Cloud Computing Project Installation
+### Components
+Hello world
+### Workflow
+Hello world
