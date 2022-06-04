@@ -39,11 +39,11 @@ Wacayang Android app is developed using Android Studio IDE. Here are components 
 * Connected to [Firebase Auth](https://firebase.google.com/docs/auth) for Google and anonymous sign in.
 * Utilize [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), and [Repository](https://developer.android.com/codelabs/basic-android-kotlin-training-repository-pattern) pattern for Single Source of Truth (SSOT)
 ### Workflow
-1. Clone The Project and Open It in Android Studio
+#### 1. Clone The Project and Open It in Android Studio
 ```
 git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
 ```
-2. Connect the Project to Your Firebase Auth
+#### 2. Connect the Project to Your Firebase Auth
 * Head to your [Firebase Console](https://console.firebase.google.com/).
 * Then create or use your existing Firebase project.
 * Open `Project Settings -> General`, select `New App`, and choose Android app.
@@ -54,5 +54,5 @@ keytool -list -v -keystore <your keystore path> -alias <your alias>
 ```
 * Install [Firebase SDK](https://developer.android.com/studio/write/firebase) to your Android Studio project.
 * Download the **google-service.json** from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
-3. Run or Build The App
+#### 3. Run or Build The App
 After you open the project, wait for the Gradle to finish building first. Then you can choose to build debug app by using `Run -> Run'app'`. Or you can build signed App by head to `Build -> Generate Signed Bundle/APK`.
