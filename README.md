@@ -3,7 +3,7 @@
 ## About
 Wacayang is a mobile application that able to identify Indonesian wayang kulit characters. This app uses images uploaded by the user as input, and the information about the name, description, image, and related video about the identified wayang character will be displayed on the app.
 
-## Features
+## App Features
 * Search various Indonesia wayang by typing on search bar.
 * Upload image from camera or gallery to predict its wayang character using machine learning.
 * Information about Indonesian wayangs inclunding name, story, images, and related wayang shows from local Indonesian puppeter.
@@ -19,7 +19,6 @@ Wacayang is a mobile application that able to identify Indonesian wayang kulit c
 ## Integration Method
 Wacayang consists of three components, Android, Cloud Computing, and Machine Learning. Basically, to integrate these, Cloud Computing acts as service to bridge communication between Android and Machine Learning. Here is a simple illustration on how our integration method works.
 ![Integration Method](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/_integration_method.png)
-<br /><br />
 Integration method explanation:
 1. Android app send a network request using Retrofit library. This request has JWT token as Authorization header.
 2. Cloud Run acts as service to serve request from the app. It will verify the token first before proceed.
@@ -30,6 +29,22 @@ Integration method explanation:
 ## How to Replicate
 This section shows how to replicate our project. There are three sub-section, 1) Android App, 2) Cloud Computing, 3) Machine Learning. Each sub-section explains how to replicate that particular section. If you are looking for the integration method, please refer to **Integration Method** section.
 ### 1. Android App
+#### Components
+Wacayang Android app is developed using Android Studio IDE. Here are components that we used.
+* Developed using [Kotlin](https://kotlinlang.org/) language.
+* Composed by [Activity](https://developer.android.com/reference/android/app/Activity) and [Fragment](https://developer.android.com/guide/fragments).
+* Using [RecycleView](https://developer.android.com/guide/topics/ui/layout/recyclerview) and its adapater for item listing.
+* [CameraX](https://developer.android.com/training/camerax) to utlize mobile camera features including flash, front/back camera, and more.
+* Using [Retrofit](https://square.github.io/retrofit/) library for network request.
+* Using official [Youtube API](https://developers.google.com/youtube/android/player) for Youtube video player.
+* [BottomNavigation](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView) to navigate between main menus (Home, Favorite, and Settings).
+* Connected to [Firebase Auth](https://firebase.google.com/docs/auth) for Google and anonymous sign in.
+* Utilize [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), and [Repository](https://developer.android.com/codelabs/basic-android-kotlin-training-repository-pattern) pattern for Single Source of Truth (SSOT)
+#### Workflow
+1. Clone The Project and Open It in Android Studio
+
+3. Run or Build The App
+
 
 ### 2. Cloud Computing
 
