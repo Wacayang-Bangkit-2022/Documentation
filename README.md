@@ -26,10 +26,8 @@ Integration method explanation:
 4. After back-end app finished processing, Cloud Run services will return the result as JSON literals to the Android app.
 5. Android app will process the JSON literals and show relevant information to the user.
 
-## How to Replicate
-This section shows how to replicate our project. There are three sub-section, 1) Android App, 2) Cloud Computing, 3) Machine Learning. Each sub-section explains how to replicate that particular section. If you are looking for the integration method, please refer to **Integration Method** section.
-### 1. Android App
-#### Components
+## Android App Installation
+### a. Components
 Wacayang Android app is developed using Android Studio IDE. Here are components that we used.
 * Developed using [Kotlin](https://kotlinlang.org/) language.
 * Composed by [Activity](https://developer.android.com/reference/android/app/Activity) and [Fragment](https://developer.android.com/guide/fragments).
@@ -40,7 +38,7 @@ Wacayang Android app is developed using Android Studio IDE. Here are components 
 * [BottomNavigation](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView) to navigate between main menus (Home, Favorite, and Settings).
 * Connected to [Firebase Auth](https://firebase.google.com/docs/auth) for Google and anonymous sign in.
 * Utilize [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), and [Repository](https://developer.android.com/codelabs/basic-android-kotlin-training-repository-pattern) pattern for Single Source of Truth (SSOT)
-#### Workflow
+### b. Workflow
 1. Clone The Project and Open It in Android Studio
 ```
 git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
@@ -55,10 +53,6 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
 keytool -list -v -keystore <your keystore path> -alias <your alias>
 ```
 * Install [Firebase SDK](https://developer.android.com/studio/write/firebase) to your Android Studio project.
-* Download the google-service.json from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
+* Download the **google-service.json** from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
 3. Run or Build The App
 After you open the project, wait for the Gradle to finish building first. Then you can choose to build debug app by using `Run -> Run'app'`. Or you can build signed App by head to `Build -> Generate Signed Bundle/APK`.
-
-### 2. Cloud Computing
-
-### 3. Machine Learning
