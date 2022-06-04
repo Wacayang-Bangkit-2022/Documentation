@@ -34,7 +34,7 @@ Wacayang Android app is developed using Android Studio IDE. Here are components 
 * Developed using [Kotlin](https://kotlinlang.org/) language.
 * Composed by [Activity](https://developer.android.com/reference/android/app/Activity) and [Fragment](https://developer.android.com/guide/fragments).
 * Using [RecycleView](https://developer.android.com/guide/topics/ui/layout/recyclerview) and its adapater for item listing.
-* [CameraX](https://developer.android.com/training/camerax) to utlize mobile camera features including flash, front/back camera, and more.
+* [CameraX](https://developer.android.com/training/camerax) to utilize mobile camera features including flash, front/back camera, and more.
 * Using [Retrofit](https://square.github.io/retrofit/) library for network request.
 * Using official [Youtube API](https://developers.google.com/youtube/android/player) for Youtube video player.
 * [BottomNavigation](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView) to navigate between main menus (Home, Favorite, and Settings).
@@ -42,9 +42,22 @@ Wacayang Android app is developed using Android Studio IDE. Here are components 
 * Utilize [LiveData](https://developer.android.com/topic/libraries/architecture/livedata), [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel), and [Repository](https://developer.android.com/codelabs/basic-android-kotlin-training-repository-pattern) pattern for Single Source of Truth (SSOT)
 #### Workflow
 1. Clone The Project and Open It in Android Studio
-
+```
+git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
+```
+2. Connect the Project to Your Firebase Auth
+* Head to your [Firebase Console](https://console.firebase.google.com/).
+* Then create or use your existing Firebase project.
+* Open `Project Settings -> General`, select `New App`, and choose Android app.
+* Fill debug SHA1 fingerprint. You can find this by execute `Gradle -> signingReport` on Android Studio.
+* After the new Firebase app added, you can add your signed App SHA1 fingerprint by executing this command on terminal.
+```
+keytool -list -v -keystore <your keystore path> -alias <your alias>
+```
+* Install [Firebase SDK](https://developer.android.com/studio/write/firebase) to your Android Studio project.
+* Download the google-service.json from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
 3. Run or Build The App
-
+After you open the project, wait for the Gradle to finish building first. Then you can choose to build debug app by using `Run -> Run'app'`. Or you can build signed App by head to `Build -> Generate Signed Bundle/APK`.
 
 ### 2. Cloud Computing
 
