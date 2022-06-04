@@ -89,7 +89,7 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-CloudComputing.git
 * These URL will be used by Android app to send network request. Replace the URL on `ApiService.kt` inside your Android Studio project to make it works with your deployed API.
 * Go to your Cloud Console then head to your Cloud Run tab.
 * Open your deployed `wacayang_general_api` service and create new revision by choosing `Edit & Deploy New Revision`.
-* On `Variable and Secrets` tab, add new variable for `DB_NAME`, `DB_USER`, `DB_PASS`, and `INSTANCE_CONNECTION_NAME`. This necessary so your service can connect to your database. Fill these information based on your SQL database instance, then choose `Deploy` to create new revision.
+* On Variable and Secrets tab, add new variable for `DB_NAME`, `DB_USER`, `DB_PASS`, and `INSTANCE_CONNECTION_NAME`. This necessary so your service can connect to your database. Fill these information based on your SQL database instance, then choose `Deploy` to create new revision.
 #### Our Deployed REST API URL
 You can send an e-mail to **nauvalmfirdaus@gmail.com** to access our API. We won't disclose our API here to prevent unwanted GCP billing. But, here is a gist of our REST API URLs.
 * Wacayang General API
