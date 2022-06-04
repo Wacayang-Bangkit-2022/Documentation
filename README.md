@@ -4,10 +4,10 @@
 Wacayang is a mobile application that able to identify Indonesian wayang kulit characters. This app uses images uploaded by the user as input, and the information about the name, description, image, and related video about the identified wayang character will be displayed on the app.
 
 ## App Features
-![Feature 1](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature (1).png)
-![Feature 2](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature (2).png)
-![Feature 3](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature (3).png)
-![Feature 4](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature (4).png)
+![Feature 1](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature%20(1).png)
+![Feature 2](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature%20(2).png)
+![Feature 3](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature%20(3).png)
+![Feature 4](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/feature%20(4).png)
 * Search various Indonesia wayang by typing on search bar.
 * Upload image from camera or gallery to predict its wayang character using machine learning.
 * Information about Indonesian wayangs inclunding name, story, images, and related wayang shows from local Indonesian puppeter.
