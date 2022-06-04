@@ -48,7 +48,7 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
 * Then create or use your existing Firebase project.
 * Open `Project Settings -> General`, select `New App`, and choose Android app.
 * Fill debug SHA1 fingerprint. You can find this by execute `Gradle -> signingReport` on Android Studio.
-* After the new Firebase app added, you can add your signed App SHA1 fingerprint by executing this command on terminal.
+* After the new Firebase app added, you can add your signed app SHA1 fingerprint by executing this command on terminal. You will need to create your [Keystore](https://developer.android.com/studio/publish/app-signing#generate-key) first
 ```
 keytool -list -v -keystore <your keystore path> -alias <your alias>
 ```
