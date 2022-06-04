@@ -50,6 +50,7 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
 #### 2. Connect the Project to Your Firebase Auth
 * Head to your [Firebase Console](https://console.firebase.google.com/).
 * Then create or use your existing Firebase project.
+* Activate Firebase Authentication feature.
 * Open `Project Settings -> General`, select `New App`, and choose Android app.
 * Fill debug SHA1 fingerprint. You can find this by execute `Gradle -> signingReport` on Android Studio.
 * After the new Firebase app added, you will see your debug SHA1 added to that Firebase app. You can add another SHA1 such as your signed app SHA1. You can find your signed app SHA1 by executing this command on terminal. But, you will need to create your [Keystore](https://developer.android.com/studio/publish/app-signing#generate-key) first
@@ -57,11 +58,45 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-MobileDev.git
 keytool -list -v -keystore <your keystore path> -alias <your alias>
 ```
 * Install [Firebase SDK](https://developer.android.com/studio/write/firebase) to your Android Studio project.
-* Download the **google-service.json** from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
+* Download the `google-service.json` from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
 #### 3. Run or Build The App
 After you open the project, wait for the Gradle to finish building first. Then you can choose to build debug app by using `Run -> Run'app'`. Or you can build signed App by head to `Build -> Generate Signed Bundle/APK`.
 ## Cloud Computing Project Installation
 ### Components
-Hello world
+* SQL database running on Google Cloud Platform
+* REST API developed using Node.JS, Express, and Flask.
+* Deployed REST API running as service on Google Cloud Run.
 ### Workflow
-Hello world
+#### 1. Clone The Project and Open It in Your Favorite IDE
+```
+git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-CloudComputing.git
+```
+#### 2. Get Service Account Key from Firebase
+* Open your last Firebase project used for Android Studio project installation
+* Go to `Project Settings -> Service Accounts`
+* Choose `Generate New Private Key`, and your private key JSON file will be downloaded.
+* Rename your private key as `serviceAccountKey.json`
+* Copy that file to your cloned project, both inside `wacayang_general_api` and `wacayang_ai_api` folder.
+#### 3. Create SQL Instance on GCP
+* Open your Cloud Console, head to `SQL -> MySQL -> Create New Instance`
+* Create new database on your newly created SQL instance.
+* Create necessary tables as showed on this schema below.
+* Setup your database connection such as `DB_USER`, `DB_PASS` on the `Connection` tab.
+#### 4. Deploy REST API to Cloud Run
+* There will be two service running on Cloud Run.
+* First, go to `wacayang_general_api` folder via terminal. And run `gcloud run deploy` command. Fill the rest of required fields. When it finish, it should shows your deployed service URL.
+* Do the same for `wacayang_ai_api` folder, run `gcloud run deploy` command. Fill the rest of required fields. When it finish, it should shows your deployed service URL.
+* These URL will be used by Android app to send network request. Replace the URL on `ApiService.kt` inside your Android Studio project to make it works with your deployed API.
+* Go to your Cloud Console then head to your Cloud Run tab.
+* Open your deployed `wacayang_general_api` service and create new revision by choosing `Edit & Deploy New Revision`.
+* On `Variable and Secrets` tab, add new variable for `DB_NAME`, `DB_USER`, `DB_PASS`, and `INSTANCE_CONNECTION_NAME`. This necessary so your service can connect to your database. Fill these information based on your SQL database instance, then choose `Deploy` to create new revision.
+#### Our Deployed REST API URL
+You can send an e-mail to **nauvalmfirdaus@gmail.com** to access our API. We won't disclose our API here to prevent unwanted GCP billing. But, here is a gist of our REST API URLs.
+* Wacayang General API
+```
+https://wacayang-api-<encrypted-code>.a.run.app
+```
+* Wacayang AI API
+```
+https://wacayang-ai-api-<encrypted-code>.a.run.app
+```
