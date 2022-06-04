@@ -81,6 +81,7 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-CloudComputing.git
 * Open your Cloud Console, head to `SQL -> MySQL -> Create New Instance`
 * Create new database on your newly created SQL instance.
 * Create necessary tables as showed on this schema below.
+![Database Schema](https://github.com/Wacayang-Bangkit-2022/Wacayang-Documentation/blob/main/assets/schema.png)
 * Setup your database connection such as `DB_USER`, `DB_PASS` on the `Connection` tab.
 #### 4. Deploy REST API to Cloud Run
 * There will be two service running on Cloud Run.
