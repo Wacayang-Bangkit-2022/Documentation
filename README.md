@@ -61,6 +61,7 @@ keytool -list -v -keystore <your keystore path> -alias <your alias>
 * Download the `google-service.json` from your Firebase Console, and copy it to the `app` folder of your Android Studio project.
 #### 3. Run or Build The App
 After you open the project, wait for the Gradle to finish building first. Then you can choose to build debug app by using `Run -> Run'app'`. Or you can build signed App by head to `Build -> Generate Signed Bundle/APK`.
+
 ## Cloud Computing Project Installation
 ### Components
 * SQL database running on Google Cloud Platform
@@ -101,3 +102,34 @@ https://wacayang-api-<encrypted-code>.a.run.app
 ```
 https://wacayang-ai-api-<encrypted-code>.a.run.app
 ```
+
+## Machine Learning Project Installation
+### Components
+* Image Pre-processing
+* Image Augmentation
+* Early Stopping
+* Callbacks
+* Model Checkpoint
+* Convolutional Neural Network (CNN)
+* Transfer Learning
+  * DenseNet121
+  * InceptionV3
+  * ResNet152V2
+* Model Evaluate
+* Accuracy and Loss Graph
+### Requirements
+1. [Google Colaboratory](https://colab.research.google.com/) or [Jupyter Notebook](https://jupyter.org/install)
+2. Kaggle API Token
+3. Latest Tensorflow Version 2.8.2
+4. Python Version 3.6 or above
+### Workflow
+1. [Generate Kaggle API token](https://github.com/Kaggle/kaggle-api#api-credentials) to get `kaggle.json` file
+2. Open the `.ipynb` file in Google Colab or Jupyter Notebook
+   * [Baseline Model (CNN)](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Base%20Model%20(Simple%20CNN)/Baseline_Model.ipynb)
+   * [DenseNet121](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Model%20with%20DenseNet121/Wacayang_DenseNet_Model.ipynb)
+   * [InceptionV3](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Model%20with%20InceptionV3/Wacayang_InceptionV3_Model.ipynb)
+   * [ResNet152V2](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Model%20with%20ResNet152V2/Wacayang_ResNet_Model.ipynb)
+3. Click `Copy to Drive`  or Click `File` > `Save a copy in Drive`. This will allow you to run and edit the `.ipynb` file in your own Google Drive account
+4. Upload your `kaggle.json` file (API Token)
+5. Run every cell in the `.ipynb` file
+6. Download the model `.h5` file by left clicking the `.h5`file in the Colab directory (Automatically saved to `/content` file by Model Checkpoint)
