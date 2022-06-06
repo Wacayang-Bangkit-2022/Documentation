@@ -122,6 +122,12 @@ https://wacayang-ai-api-<encrypted-code>.a.run.app
 2. Kaggle API Token
 3. Latest Tensorflow Version 2.8.2
 4. Python Version 3.6 or above
+### Dataset
+* [Wayang Image Dataset](https://www.kaggle.com/datasets/bayuokta/wayang-bagong-cepot-gareng-petruk-semar)
+
+<p align="center"> <img src="/assets/dataset%20preview.png"></p>
+<p align="center">Dataset Preview. (Left to right) Bagong, Cepot, Gareng, Petruk, and Semar</p>
+
 ### Workflow
 1. [Generate Kaggle API token](https://github.com/Kaggle/kaggle-api#api-credentials) to get `kaggle.json` file
 2. Open the `.ipynb` file in Google Colab or Jupyter Notebook
