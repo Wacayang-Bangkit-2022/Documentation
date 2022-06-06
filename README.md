@@ -118,10 +118,10 @@ https://wacayang-ai-api-<encrypted-code>.a.run.app
 * Model Evaluate
 * Accuracy and Loss Graph
 ### Requirements
-1. [Google Colaboratory](https://colab.research.google.com/) or [Jupyter Notebook](https://jupyter.org/install)
-2. Kaggle API Token
-3. Latest Tensorflow Version 2.8.2
-4. Python Version 3.6 or above
+1. [Google Colaboratory](https://colab.research.google.com/) or [Jupyter Notebook](https://jupyter.org/install).
+2. Kaggle API Token.
+3. Latest Tensorflow Version 2.8.2.
+4. Python Version 3.6 or above.
 ### Dataset
 * [Wayang Image Dataset](https://www.kaggle.com/datasets/bayuokta/wayang-bagong-cepot-gareng-petruk-semar)
 
@@ -131,7 +131,7 @@ https://wacayang-ai-api-<encrypted-code>.a.run.app
 
 ### Workflow
 1. [Generate Kaggle API token](https://github.com/Kaggle/kaggle-api#api-credentials) to get `kaggle.json` file
-2. Open the `.ipynb` file in Google Colab or Jupyter Notebook
+2. Open the `.ipynb` file in Google Colab or Jupyter Notebook:
    * [Baseline Model (CNN)](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Base%20Model%20(Simple%20CNN)/Baseline_Model.ipynb)
    * [DenseNet121](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Model%20with%20DenseNet121/Wacayang_DenseNet_Model.ipynb)
    * [InceptionV3](https://colab.research.google.com/github/Wacayang-Bangkit-2022/Wacayang-MachineLearning/blob/main/Wayang%20Classifier/Model%20with%20InceptionV3/Wacayang_InceptionV3_Model.ipynb)
