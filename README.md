@@ -126,7 +126,8 @@ https://wacayang-ai-api-<encrypted-code>.a.run.app
 * [Wayang Image Dataset](https://www.kaggle.com/datasets/bayuokta/wayang-bagong-cepot-gareng-petruk-semar)
 
 <p align="center"> <img src="/assets/dataset%20preview.png"></p>
-<p align="center">Dataset Preview. (Left to right) Bagong, Cepot, Gareng, Petruk, and Semar</p>
+<p align="center">Dataset Preview</p>
+<p align="center">(Left to right) Bagong, Cepot, Gareng, Petruk, and Semar</p>
 
 ### Workflow
 1. [Generate Kaggle API token](https://github.com/Kaggle/kaggle-api#api-credentials) to get `kaggle.json` file
