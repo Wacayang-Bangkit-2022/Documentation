@@ -139,4 +139,4 @@ https://wacayang-ai-api-<encrypted-code>.a.run.app
 3. Click `Copy to Drive`  or Click `File` > `Save a copy in Drive`. This will allow you to run and edit the `.ipynb` file in your own Google Drive account
 4. Upload your `kaggle.json` file (API Token)
 5. Run every cell in the `.ipynb` file
-6. Download the model `.h5` file by left clicking the `.h5`file in the Colab directory (Automatically saved to `/content` file by Model Checkpoint)
+6. Download the model `.h5` file by left clicking the `.h5`file in the Colab directory (Automatically saved to `/content/` file by Model Checkpoint)
