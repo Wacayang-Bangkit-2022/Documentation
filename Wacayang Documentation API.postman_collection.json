@@ -1,0 +1,942 @@
+{
+	"info": {
+		"_postman_id": "5f4aec6e-d0d2-4d0b-a2aa-85c03314697a",
+		"name": "Wacayang Documentation API",
+		"description": "This is the Wacayang API documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20994859"
+	},
+	"item": [
+		{
+			"name": "AI API",
+			"item": [
+				{
+					"name": "AI Landing Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": "This API allows you to get AI Landing page"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"Bad request. Invalid token.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "AI to predict wayang character",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/predict",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"predict"
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to post AI to predict wayang character\n\nEndFragmen"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/predict",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"predict"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Prediction successful\",\r\n  \"prediction_id\": 0,\r\n  \"prediction_label\": \"Semar\"\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/predict",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"predict"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"Prediction failed. File not supported.\"\r\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Wacayang API",
+			"item": [
+				{
+					"name": "General Landing Page",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-api-slx6by6ooa-et.a.run.app/",
+							"protocol": "https",
+							"host": [
+								"wacayang-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to get General landing page\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-api-slx6by6ooa-et.a.run.app/",
+									"protocol": "https",
+									"host": [
+										"wacayang-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n    \"error\": false,\r\n    \"message\": \"Welcome to Wacayang API! Try: /wayangs, /wayangs/:id, /search?name=query\"\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-api-slx6by6ooa-et.a.run.app/",
+									"protocol": "https",
+									"host": [
+										"wacayang-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"Bad request. Invalid token.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Wayang List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-api-slx6by6ooa-et.a.run.app/wayangs",
+							"protocol": "https",
+							"host": [
+								"wacayang-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"wayangs"
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to get wayang list\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-api-slx6by6ooa-et.a.run.app/wayangs",
+									"protocol": "https",
+									"host": [
+										"wacayang-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"wayangs"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Wayangs fetched successfully\",\r\n  \"listWayang\":[\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"Semar\",\r\n      \"description\": \"Sample description\",\r\n      \"image\": \"https://url1,https://url2,https://url3\",\r\n      \"video\": \"https://video\"\r\n    }\r\n  ]\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-api-slx6by6ooa-et.a.run.app/wayangs",
+									"protocol": "https",
+									"host": [
+										"wacayang-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"wayangs"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"No entries.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Specific wayang by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/wayangs/:id",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"wayangs",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to get specific wayang by ID\n\nEndFragmen"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//wayangs/:id",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"wayangs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"error\": false,\n    \"message\": \"A wayang fetched successfully.\",\n    \"wayang\": {\n        \"id\": 0,\n        \"name\": \"Semar\",\n        \"description\": \"Sample description\",\n        \"image\": \"https://url1,https://url2,https://url3\",\n        \"video\": \"https://video\",\n        \"is_favorite\": 0\n    }\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//wayangs/:id",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"wayangs",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"No found.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Specific wayang by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/search",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"search"
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to get specific wayang by name\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//search",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"search"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Search wayangs found fetched successfully.\",\r\n  \"wayangFound\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"Semar\",\r\n      \"description\": \"Sample description\",\r\n      \"image\": \"https://url1,https://url2,https://url3\",\r\n      \"video\": \"https://video\"\r\n    }\r\n  ]\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//search",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"search"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"No found.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Add new wayang favorite",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/add-favorite",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"add-favorite"
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to post new wayang favorite\n\ninsert your data :\n\nUser ID: Integer\n\nWayang : String\n\nEndFragme"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//add-favorite",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"add-favorite"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Favorite inserted successfully.\",\r\n  \"data\": {\r\n    \"user\": \"xxxxxxxxxx\",\r\n    \"wayang\": 0\r\n  }\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//add-favorite",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"add-favorite"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"Failed to connect and insert new favorite.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "delete favorite wayang by id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/del-favorite",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"del-favorite"
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to delete favorite wayang by ID\n\nInsert your data :\n\nUser Id: Integer\n\nWayang : String\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//del-favorite",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"del-favorite"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Favorite deleted successfully.\",\r\n  \"data\": {\r\n    \"user\": \"xxxxxxxxxx\",\r\n    \"wayang\": 0\r\n  }\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//del-favorite",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"del-favorite"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"Failed to connect and delete favorite.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Wayang favorite list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/favorites",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"favorites"
+							]
+						},
+						"description": "StartFragment\n\nThis API allows you to get list wayang favorite  \n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//favorites",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"favorites"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Favorite wayangs fetched successfully.\",\r\n  \"favorite\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"Semar\",\r\n      \"description\": \"Sample description\",\r\n      \"image\": \"https://url1,https://url2,https://url3\",\r\n      \"video\": \"https://video\"\r\n    }\r\n  ]\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//favorites",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"favorites"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"No favorite entries.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Add Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/add-comment",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"add-comment"
+							]
+						},
+						"description": "StartFragment\n\nAdd comment to a specific wayang\n\nInsert your data :\n\nUser Id: Integer\n\nWayang : String\n\ncontent : Integer\n\nEndFragm"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//add-comment",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"add-comment"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Comment posted successfully.\",\r\n  \"user\": \"xxxxxxxxxx\",\r\n  \"wayang\": 1,\r\n  \"content\": \"Comment statement\"\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//add-comment",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"add-comment"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"Failed to post comment.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/del-comment",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"del-comment"
+							]
+						},
+						"description": "StartFragment\n\nDelete comment on a specific wayang\n\nInsert your data :\n\nComment id : Int\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"Comment deleted successfully.\",\r\n  \"comment_id\": 1\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\n    \"error\": true,\n    \"message\": \"Failed to delete comment.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/comments",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"comments"
+							]
+						},
+						"description": "StartFragment\n\nGet comments on specific wayang\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"essage\": \"Comments fetched successfully.\",\r\n  \"wayang_id\": 1,\r\n  \"comments\": [\r\n    {\r\n      \"comment_id\": 1,\r\n      \"user_id\": \"xxxxxxxxxx\",\r\n      \"user_name\": \"Nauval M Firdaus\",\r\n      \"user_photo\": \"https://photourl.com\",\r\n      \"comment\": \"Comment statement.\",\r\n      \"created_at\": \"2022-05-30T03:50:59.000Z\"\r\n    }\r\n  ]\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": []
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"Failed to fetch comments.\"\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Sign",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app/sign",
+							"protocol": "https",
+							"host": [
+								"wacayang-ai-api-slx6by6ooa-et",
+								"a",
+								"run",
+								"app"
+							],
+							"path": [
+								"sign"
+							]
+						},
+						"description": "StartFragment\n\nSign logged Firebase user to SQL database\n\nInsert your data :\n\nuser id : Int\n\nEndFragment"
+					},
+					"response": [
+						{
+							"name": "Succes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//sign",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"sign"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": false,\r\n  \"message\": \"User signed in.\",\r\n  \"user\": \"xxxxxxxxxx\"\r\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://wacayang-ai-api-slx6by6ooa-et.a.run.app//sign",
+									"protocol": "https",
+									"host": [
+										"wacayang-ai-api-slx6by6ooa-et",
+										"a",
+										"run",
+										"app"
+									],
+									"path": [
+										"",
+										"sign"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "{\r\n  \"error\": true,\r\n  \"message\": \"Error to sign user.\"\r\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
