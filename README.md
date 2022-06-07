@@ -1,11 +1,10 @@
 # Wacayang, Indonesian Wayang App
 
 ## Team C22-PC383 Contributors
-* Nauval Muhammad Firdaus (A2005F0453) - Mobile Development - Universitas Bina Nusantara
-* Fahrizza Irham Taufany (M2116L1465) - Machine Learning - Institut Teknologi Kalimantan
-* Muhammad Izzah Alfatih (M2012F1299) - Machine Learning - Universitas Telkom
-* Dimas Aji Permadi (C2152F1678) - Cloud Computing - Sekolah Tinggi Teknologi Bandung
-
+* Nauval Muhammad Firdaus (A2005F0453) - [GitHub@NauvalNC](https://github.com/NauvalNC) - Mobile Development - Universitas Bina Nusantara
+* Fahrizza Irham Taufany (M2116L1465) - [GitHub@fahrizzairham](https://github.com/fahrizzairham) - Machine Learning - Institut Teknologi Kalimantan
+* Muhammad Izzah Alfatih (M2012F1299) - [GitHub@IzzahAlfatih](https://github.com/IzzahAlfatih) - Machine Learning - Universitas Telkom
+* Dimas Aji Permadi (C2152F1678) - [GitHub@DimasAji1999](https://github.com/DimasAji1999) - Cloud Computing - Sekolah Tinggi Teknologi Bandung
 
 ## About
 Wacayang is a mobile application that able to identify Indonesian wayang kulit characters. This app uses images uploaded by the user as input, and the information about the name, description, image, and related video about the identified wayang character will be displayed on the app.
