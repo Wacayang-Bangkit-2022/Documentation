@@ -102,14 +102,9 @@ git clone https://github.com/Wacayang-Bangkit-2022/Wacayang-CloudComputing.git
 * Open your deployed `wacayang_general_api` service and create new revision by choosing `Edit & Deploy New Revision`.
 * On Variable and Secrets tab, add new variable for `DB_NAME`, `DB_USER`, `DB_PASS`, and `INSTANCE_CONNECTION_NAME`. This necessary so your service can connect to your database. Fill these information based on your SQL database instance, then choose `Deploy` to create new revision.
 #### Our Deployed REST API URL
-You can send an e-mail to **nauvalmfirdaus@gmail.com** to access our API. We won't disclose our API here to prevent unwanted GCP billing. But, here is a gist of our REST API URLs.
-* Wacayang General API
+Please head to this link for our detailed REST API documentation.
 ```
-https://wacayang-api-<encrypted-code>.a.run.app
-```
-* Wacayang AI API
-```
-https://wacayang-ai-api-<encrypted-code>.a.run.app
+https://documenter.getpostman.com/view/20994859/UyxqDPV6
 ```
 
 ## Machine Learning Project Installation
